@@ -2,3 +2,4 @@
 Тест SmartGit
 ## Автор
 OrlovskiyOleg
+for new commit
