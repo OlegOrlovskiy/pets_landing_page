@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="#">
+      <title>Волонтерство</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post" name="form-volunteer">
+        <p class="form-volunteer-head">Волонтерство</p>
+        <P class="application">Заявка</P>
+        <p>Отправьте нам заявку о том, что готовы помочь.
+           Когда нам будет необходима помощь, мы позвоним вам.</p>
+
+        <div class="form-volunteer-name">
+          <label for="form-volunteer-name">Фамилия и имя</label>
+          <input type="text" name="form-volunteer-name" id="form-volunteer-name" minlength="2" maxlength="56" placeholder="Введите ваше имя и фамилию">
+        </div>
+
+        <div class="form-volunteer-phone">
+          <label for="form-volunteer-phone">Номер телефона (только белорусский номер)</label>
+          <input type="text" name="form-volunteer-phone" id="form-volunteer-phone" pattern="[^A-Za-zА-Яа-яЁё]+$" placeholder="Введите ваш номер телефона" required>
+          <span>Обязательное поле для заполнения</span>
+        </div>
+
+        <div class="form-volunteer-type">
+          <label> 
+            <input type="radio" name="form-volunteer-type" value="Хочу помогать на постоянной основе (расписание можно подобрать так, как будет удобно для всех)">
+            Хочу помогать на постоянной основе (расписание можно подобрать так, как будет удобно для всех)
+          </label>
+          <label> 
+            <input type="radio" name="form-volunteer-type" value="Готов помогать иногда. Хочу выбрать удобное для меня время">
+            Готов помогать иногда. Хочу выбрать удобное для меня время
+          </label>          
+        </div>
+
+        <div class="form-volunteer-comment">
+          <label for="form-volunteer-comment">Замечания</label>
+          <textarea id="form-volunteer-comment" name="form-volunteer-comment" rows="3" maxlength="500" placeholder="Замечания"></textarea>
+        </div>
+
+
+        <div class="form-volunteer-buttons">
+          <input type="submit" value="Отправить заявку">
+          <input type="reset" value="Отмена">
+        </div>
+      </form>
+      
+    </main>
+  </body>
+</html>
