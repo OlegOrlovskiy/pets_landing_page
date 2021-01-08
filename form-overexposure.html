@@ -14,7 +14,7 @@
 
         <div class="form-overexposure-name">
           <label for="form-overexposure-name">Фамилия и имя</label>
-          <input type="text" name="form-overexposure-name" id="form-overexposure-name" minlength="2" maxlength="56" placeholder="Введите ваше имя и фамилию">
+          <input type="text" name="form-overexposure-name" id="form-overexposure-name" pattern="[A-Za-zА-Яа-яЁё/s]{2,56}" placeholder="Введите ваше имя и фамилию">
         </div>
 
         <div class="form-overexposure-phone">
@@ -25,9 +25,7 @@
 
         <div class="form-overexposure-comment">
           <label for="form-overexposure-comment">Замечания</label>
-          <textarea id="form-overexposure-comment" name="form-overexposure-comment" rows="3">
-            Опишите, на какой срок вы смогли бы взять питомца на передержку
-          </textarea>
+          <textarea id="form-overexposure-comment" name="form-overexposure-comment" rows="3" maxlength="500" placeholder="Опишите, на какой срок вы смогли бы взять питомца на передержку"></textarea>
         </div>
 
         <div class="form-overexposure-addInfo"> 
