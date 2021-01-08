@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="#">
+      <title>Забрать на передержку</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post" name="form-overexposure">
+        <p class="form-overexposure-head">Забрать на передержку</p>
+        <p>Оставьте информацию о себе. Мы позвоним вам и договоримся,
+        когда вы сможете забрать себе питомца.</p>
+
+        <div class="form-overexposure-name">
+          <label for="form-overexposure-name">Фамилия и имя</label>
+          <input type="text" name="form-overexposure-name" id="form-overexposure-name" minlength="2" maxlength="56" placeholder="Введите ваше имя и фамилию">
+        </div>
+
+        <div class="form-overexposure-phone">
+          <label for="form-overexposure-phone">Номер телефона (только белорусский номер)</label>
+          <input type="text" name="form-overexposure-phone" id="form-overexposure-phone" pattern="[^A-Za-zА-Яа-яЁё]+$" placeholder="Введите ваш номер телефона" required>
+          <span>Обязательное поле для заполнения</span>
+        </div>
+
+        <div class="form-overexposure-comment">
+          <label for="form-overexposure-comment">Замечания</label>
+          <textarea id="form-overexposure-comment" name="form-overexposure-comment" rows="3">
+            Опишите, на какой срок вы смогли бы взять питомца на передержку
+          </textarea>
+        </div>
+
+        <div class="form-overexposure-addInfo"> 
+          <p>
+            Если у вас есть вопросы, можете позвонить нам:<br>
+            +375 (33) 6237879  Лена<br>
+            +375 (29) 7877791  Ольга<br>
+            +375 (29) 5837015  Рита
+          </p>
+        </div>
+
+        <p class="form-overexposure-bottom">
+          Наши волонтеры будут активно искать будущий дом хвостику, пока вы помогаете нам с передержкой.<br>
+          Спасибо за помощь!
+        </p>
+
+        <div class="form-overexposure-buttons">
+          <input type="submit" value="Отправить">
+          <input type="reset" value="Отмена">
+        </div>
+      </form>
+      
+    </main>
+  </body>
+</html>
