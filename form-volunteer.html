@@ -15,7 +15,7 @@
 
         <div class="form-volunteer-name">
           <label for="form-volunteer-name">Фамилия и имя</label>
-          <input type="text" name="form-volunteer-name" id="form-volunteer-name" minlength="2" maxlength="56" placeholder="Введите ваше имя и фамилию">
+          <input type="text" name="form-volunteer-name" id="form-volunteer-name" pattern="[A-Za-zА-Яа-яЁё/s]{2,56}" placeholder="Введите ваше имя и фамилию">
         </div>
 
         <div class="form-volunteer-phone">
@@ -26,11 +26,11 @@
 
         <div class="form-volunteer-type">
           <label> 
-            <input type="radio" name="form-volunteer-type" value="Хочу помогать на постоянной основе (расписание можно подобрать так, как будет удобно для всех)">
+            <input type="radio" name="form-volunteer-type" value="always" checked>
             Хочу помогать на постоянной основе (расписание можно подобрать так, как будет удобно для всех)
           </label>
           <label> 
-            <input type="radio" name="form-volunteer-type" value="Готов помогать иногда. Хочу выбрать удобное для меня время">
+            <input type="radio" name="form-volunteer-type" value="sometimes">
             Готов помогать иногда. Хочу выбрать удобное для меня время
           </label>          
         </div>

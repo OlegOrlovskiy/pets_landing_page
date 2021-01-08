@@ -9,40 +9,32 @@
     <main>
       <form action="#" method="post" name="form-take-home">
         <p class="form-take-home-head">Забрать домой</p>
+        <div class="pet-info">
+          <img src="img/monic.png" class="pet-information_img">
+          <div class="pet-info-name">
+              <h4>Моник</h4><span>Мальчик, 7 месяцев</span>
+          </div>
+        </div>
         <p>Оставьте информацию о себе. Мы позвоним вам и договоримся,
         когда вы сможете забрать себе питомца.</p>
 
-        <div class="form-take-home-name">
+        <div class="form-name">
           <label for="form-take-home-name">Фамилия и имя</label>
-          <input type="text" name="form-take-home-name" id="form-take-home-name" minlength="2" maxlength="56" placeholder="Введите ваше имя и фамилию">
+          <input type="text" name="form-take-home-name" id="form-take-home-name" pattern="[A-Za-zА-Яа-яЁё/s]{2,56}" placeholder="Введите ваше имя и фамилию">
         </div>
 
         <div class="form-take-home-phone">
           <label for="form-take-home-phone">Номер телефона (только белорусский номер)</label>
-          <input type="text" name="form-take-home-phone" id="form-take-home-phone" pattern="[^A-Za-zА-Яа-яЁё]+$" placeholder="Введите ваш номер телефона" required>
-          <span>Обязательное поле для заполнения</span>
+          <input type="tel" name="form-take-home-phone" id="form-take-home-phone" pattern="[^A-Za-zА-Яа-яЁё]+$" placeholder="Введите ваш номер телефона" required>
+          <span class="tel-comment">Обязательное поле для заполнения</span>
         </div>
 
         <div class="form-take-home-comment">
           <label for="form-take-home-comment">Замечания</label>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          <textarea id="form-take-home-comment" name="form-take-home-comment" rows="3">
-<<<<<<< HEAD
-            Введите информацию, которая будет полезна нам
-=======
-            Опишите, на какой срок вы смогли бы взять питомца на передержку
->>>>>>> feature
-          </textarea>
-=======
           <textarea id="form-take-home-comment" name="form-take-home-comment" rows="3" maxlength="500" placeholder="Введите информацию, которая будет полезна нам"></textarea>
->>>>>>> Stashed changes
-=======
-          <textarea id="form-take-home-comment" name="form-take-home-comment" rows="3" maxlength="500" placeholder="Введите информацию, которая будет полезна нам"></textarea>
->>>>>>> Stashed changes
         </div>
 
-        <div class="form-take-home-addInfo"> 
+        <div class="form-take-home-contacts"> 
           <p>
             Если у вас есть вопросы, можете позвонить нам:<br>
             +375 (33) 6237879  Лена<br>
