@@ -8,112 +8,122 @@
     </head>
     <body>
         <header class="page-header">
-            <div>
-                <a href="#help">Как помочь</a>
-                <a href="#animals">Подопечные животные</a>
-            </div>
-            <div>
-                <a href="#about">О нас</a>
-                <a href="#contact">Контакты</a>
-            </div>
-            <div>
-                <a href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>         
-                <a href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a>
-            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <lin class="nav__item"><a class="nav__link" href="#help">Как помочь</a></lin>
+                    <li class="nav__item"><a class="nav__link" href="#animals">Подопечные животные</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
+                </ul>                
+            </nav> 
+            <div class="social-networks">
+                <ul class="social-networks__list">
+                    <li class="social-networks__item">
+                        <a class="social-networks__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>
+                    </li>
+                    <li class="social-networks__item">
+                        <a class="social-networks__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a>                    
+                    </li>
+                </ul>
+            </div>      
+            
         </header>
 
         <main>
             <section class="our-purpose">
-                <h1>СПАСИ ЖИЗНЬ <small>Благотворительное общественное объединение защиты животных</small></h1>
-                <p>Наша цель: помощь бездомным животных. Мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.</p>
-                <p>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
-                <a href="#help"><button type="button">Действие</button></a>
+                <h1 class="our-purpose__title">СПАСИ ЖИЗНЬ <span class="our-purpose__title--small">Благотворительное общественное объединение защиты животных</span></h1>
+                <p class="our-purpose__content">Наша цель: помощь бездомным животных. Мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.</p>
+                <p class="our-purpose__content">У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+                <a class="our-purpose__link" href="#help">Действие</a>
             </section>
 
-            <section class="introduction">
-                <div>
-                    <img src="#" alt="photo of pets" width="510" height="501">
+            <section class="intro">
+                <div class="intro__image-block intro-image-block">
+                    <img class="intro-image-block__img" src="#" alt="photo of pets" width="510" height="501">
                 </div>
-                <div>
-                    <h2>Тут большие добрые сердца помогают жить маленьким сердечкам</h2>
-                    <p>Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга!</p>
-                    <p>Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
+                <div class="intro__text-block intro-text-block">
+                    <h2 class="intro-text-block__titile">Тут большие добрые сердца помогают жить маленьким сердечкам</h2>
+                    <p class="intro-text-block__text">Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга!</p>
+                    <p class="intro-text-block__text">Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
                 </div>
             </section>
 
-            <section class="help">
-                <h2 id="help">Как помочь?</h2>
-                <div>
-                    <a href="#takeHome"><img src="img/Group 9.svg" width="150" height="150"></a>
-                    <p>Дать хвостику дом или взять на передержку</p>
+            <section class="help" id="help">
+                <h2 class="help__title">Как помочь?</h2>
+                <div class="help__blocks help-block">
+                    <a class="help-block__icon" href="#takeHome"><img src="img/Group 9.svg" width="150" height="150"></a>
+                    <p class="help-block__text">Дать хвостику дом или взять на передержку</p>
                 </div>
-                <div>
-                    <a href="#money"><img src="img/Group 15.svg" width="150" height="150"></a>    
-                    <p>Перечислить деньги в фонд помощи</p>
+                <div class="help__blocks">
+                    <a class="help-block__icon" href="#money"><img src="img/Group 15.svg" width="150" height="150"></a>    
+                    <p class="help-block__text">Перечислить деньги в фонд помощи</p>
                 </div>
-                <div>
-                    <a href="#food"><img src="img/Group 14.svg" width="150" height="150"></a>
-                    <p>Привезти корм, лекарства или другие вещи</p>
+                <div class="help__blocks">
+                    <a class="help-block__icon" href="#food"><img src="img/Group 14.svg" width="150" height="150"></a>
+                    <p class="help-block__text">Привезти корм, лекарства или другие вещи</p>
                 </div>
-                <div>
-                    <a href="#devilery"><img src="img/Group 10.svg" width="150" height="150"></a>
-                    <p>Доставить животным еду или отвезти в больницу</p>
+                <div class="help__blocks">
+                    <a class="help-block__icon" href="#devilery"><img src="img/Group 10.svg" width="150" height="150"></a>
+                    <p class="help-block__text">Доставить животным еду или отвезти в больницу</p>
                 </div>
-                <div>
-                    <a href="#volunteer"><img src="img/Group 13.svg" width="150" height="150"></a>
-                    <p>Выгуливать, кормить, мыть или лечить хвостиков</p>
+                <div class="help__blocks">
+                    <a class="help-block__icon" href="#volunteer"><img src="img/Group 13.svg" width="150" height="150"></a>
+                    <p class="help-block__text">Выгуливать, кормить, мыть или лечить хвостиков</p>
                 </div>
              
             </section>
 
-            <section class="take-home">
-                <img src="img/Group 22.svg" alt="Дать хвостику дом или взять на передержку">
-                <div>
-                    <h2 id="takeHome">Дом и любовь для хвостика</h2>
-                    <p>Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому-то нужен будет именно такой друг.</p>
+            <section class="take-home" id="takeHome">
+                <img class="take-home__icon" src="img/Group 22.svg" alt="Дать хвостику дом или взять на передержку">
+                <div class="take-home__block take-home-block">
+                    <h2 class="take-home-block__title">Дом и любовь для хвостика</h2>
+                    <p class="take-home-block__text">Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому-то нужен будет именно такой друг.</p>
                 </div>
-                <div>
-                    <h2>Передержка</h2>
-                    <p>Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.</p>
-                 </div>
-                        
-                <h2 id="animals">Наши подопечные</h2>
-                <a href="#">Посмотреть всех</a>
-                <ul>
-                    <li>
-                        <div>
-                            <img href="#" alt="фото животного" width="368" height="372">
-                            <h3>Имя</h3>
-                            <p>Описание</p>
-                            <p>Сколько в САХЕ, на передержке</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img href="#" alt="фото животного" width="368" height="372">
-                            <h3>Имя</h3>
-                            <p>Описание</p>
-                            <p>Сколько в САХЕ, на передержке</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img href="#" alt="фото животного" width="368" height="372">
-                            <h3>Имя</h3>
-                            <p>Описание</p>
-                            <p>Сколько в САХЕ, на передержке</p>
-                        </div>
-                    </li>
-                </ul>
-                <input type="button" id="form-take-home" name="form-take-home" value="Забрать домой">
-                <input type="button" id="form-overexposure" name="form-overexposure" value="Забрать на передержку">
-                
-                <p>Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях. Переходите на наши странички.</p>
-                
-                <div>
-                    <a href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>         
-                    <a href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a>
+                <div class="take-home__block take-home-block">
+                    <h2 class="take-home-block__title">Передержка</h2>
+                    <p class="take-home-block__text">Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.</p>
                 </div>
+                    
+                <div class="animals" id="animals">
+                    <h2 class="animals__title">Наши подопечные</h2>
+                    <a class="animals__link animals__link--look-all" href="#">Посмотреть всех</a>
+                    <ul class="animals__list">
+                        <li class="animals__item item-animals">
+                            <div class="item-animals__wrapper wrapper-item-animals"> <!--возможнос стоит убрать обертку-->
+                                <img class="wrapper-item-animals__img" href="#" alt="фото животного" width="368" height="372">
+                                <h3 class="wrapper-item-animals__name">Имя</h3>
+                                <p class="wrapper-item-animals__descr">Описание</p>
+                                <p class="wrapper-item-animals__descr">Сколько в САХЕ, на передержке</p>
+                            </div>
+                        </li>
+                        <li class="animals__item item-animals">
+                            <div class="item-animals__wrapper wrapper-item-animals">
+                                <img class="wrapper-item-animals__img" href="#" alt="фото животного" width="368" height="372">
+                                <h3 class="wrapper-item-animals__name">Имя</h3>
+                                <p class="wrapper-item-animals__descr">Описание</p>
+                                <p class="wrapper-item-animals__descr">Сколько в САХЕ, на передержке</p>
+                            </div>
+                        </li>
+                        <li class="animals__item item-animals">
+                            <div class="item-animals__wrapper wrapper-item-animals">
+                                <img class="wrapper-item-animals__img href="#" alt="фото животного" width="368" height="372">
+                                <h3 class="wrapper-item-animals__name">Имя</h3>
+                                <p class="wrapper-item-animals__descr">Описание</p>
+                                <p class="wrapper-item-animals__descr">Сколько в САХЕ, на передержке</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="animals__buttons buttons-animals">
+                        <input class="buttons-animals__button" type="button" id="form-take-home" name="form-take-home" value="Забрать домой">
+                        <input class="buttons-animals__button" type="button" id="form-overexposure" name="form-overexposure" value="Забрать на передержку">
+                    </div>
+                </div>
+
+                    <div class="animals__footer footer-animals">
+                        <p class="footer-animals__text">Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях. Переходите на наши странички.</p>
+                        <a class="footer-animals__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>         
+                        <a class="footer-animals__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a>
+                    </div>
             </section>
 
             <section class="money">
