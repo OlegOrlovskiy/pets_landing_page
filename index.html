@@ -3,55 +3,73 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./normalize.css">
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="./style.css">
         <title>СПАСИ ЖИЗНЬ - Благотворительное общественное объединение защиты животных</title>
     </head>
     <body>
         <header class="page-header">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#help">Как помочь</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#animals">Подопечные животные</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
-                </ul>                
-            </nav> 
-            <div class="social-networks">
-                <ul class="social-networks__list">
-                    <li class="social-networks__item">
-                        <a class="social-networks__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>
-                    </li>
-                    <li class="social-networks__item">
-                        <a class="social-networks__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a> 
-                    </li>
-                </ul>
-            </div>      
-            
+            <div class="nav-container">
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#help">Как помочь</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#animals">Подопечные животные</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Контакты</a></li>
+                    </ul>
+                                 
+                </div> 
+                <div class="nav-social-networks">
+                    <ul class="nav-social-networks__list">
+                        <li class="nav-social-networks__item">
+                            <a class="nav-social-networks__link" href="https://vk.com/animalsgrodno" aria-label="Страница Вконтакте">
+                                <svg class="nav-social-network__img width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.5" cy="24.5" r="23.5" stroke-width="2"/>
+                                    <path d="M38.3124 19.219C38.522 18.5157 38.3124 18 37.3213 18H34.0381C33.2027 18 32.821 18.4461 32.6114 18.9361C32.6114 18.9361 30.9421 23.0482 28.5766 25.7145C27.8131 26.4903 27.4643 26.7353 27.0481 26.7353C26.84 26.7353 26.5375 26.4903 26.5375 25.7871V19.219C26.5375 18.3751 26.2965 18 25.6003 18H20.4413C19.9203 18 19.6059 18.3902 19.6059 18.7622C19.6059 19.5607 20.7886 19.7453 20.9099 21.9956V26.8775C20.9099 27.9467 20.7197 28.1418 20.3005 28.1418C19.1882 28.1418 16.4814 24.0146 14.875 19.29C14.5621 18.372 14.2462 18.0015 13.4078 18.0015H10.1261C9.18738 18.0015 9.00024 18.4477 9.00024 18.9377C9.00024 19.8178 10.1126 24.1734 14.1818 29.934C16.8946 33.8676 20.7137 36 24.193 36C26.2785 36 26.536 35.5266 26.536 34.71V31.7367C26.536 30.79 26.7352 30.5994 27.3954 30.5994C27.8805 30.5994 28.7158 30.8474 30.6636 32.7424C32.8883 34.9897 33.2566 35.9985 34.5067 35.9985H37.7884C38.7256 35.9985 39.1942 35.5251 38.9247 34.5905C38.6298 33.6604 37.5668 32.3068 36.1565 30.7053C35.39 29.7918 34.2447 28.8088 33.8959 28.3173C33.4093 27.6836 33.5501 27.4038 33.8959 26.8412C33.8974 26.8427 37.8962 21.1533 38.3124 19.219Z"/>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li class="nav-social-networks__item">
+                            <a class="nav-social-networks__link" href="https://www.instagram.com/animalsgrodno/" aria-label="Страница Инстаграм">
+                                <svg class="nav-social-network__img" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.5" cy="24.5" r="23.5" stroke-width="2"/>
+                                    <path d="M24.4964 19.9981C22.0175 19.9981 19.9945 22.0211 19.9945 24.5C19.9945 26.9789 22.0175 29.0019 24.4964 29.0019C26.9752 29.0019 28.9982 26.9789 28.9982 24.5C28.9982 22.0211 26.9752 19.9981 24.4964 19.9981ZM37.9985 24.5C37.9985 22.6357 38.0154 20.7884 37.9107 18.9275C37.806 16.766 37.3129 14.8477 35.7324 13.2672C34.1485 11.6832 32.2336 11.1935 30.0722 11.0888C28.2079 10.9841 26.3606 11.001 24.4997 11.001C22.6355 11.001 20.7882 10.9841 18.9273 11.0888C16.7659 11.1935 14.8477 11.6866 13.2671 13.2672C11.6832 14.8511 11.1935 16.766 11.0888 18.9275C10.9841 20.7917 11.001 22.6391 11.001 24.5C11.001 26.3609 10.9841 28.2116 11.0888 30.0725C11.1935 32.234 11.6866 34.1523 13.2671 35.7328C14.851 37.3168 16.7659 37.8065 18.9273 37.9112C20.7916 38.0159 22.6389 37.999 24.4997 37.999C26.364 37.999 28.2113 38.0159 30.0722 37.9112C32.2336 37.8065 34.1518 37.3134 35.7324 35.7328C37.3163 34.1489 37.806 32.234 37.9107 30.0725C38.0188 28.2116 37.9985 26.3643 37.9985 24.5ZM24.4964 31.4268C20.6632 31.4268 17.5697 28.3332 17.5697 24.5C17.5697 20.6668 20.6632 17.5732 24.4964 17.5732C28.3295 17.5732 31.423 20.6668 31.423 24.5C31.423 28.3332 28.3295 31.4268 24.4964 31.4268ZM31.7067 18.9072C30.8118 18.9072 30.089 18.1845 30.089 17.2895C30.089 16.3945 30.8118 15.6718 31.7067 15.6718C32.6017 15.6718 33.3244 16.3945 33.3244 17.2895C33.3247 17.502 33.283 17.7125 33.2018 17.9089C33.1206 18.1053 33.0015 18.2837 32.8512 18.434C32.7009 18.5843 32.5225 18.7034 32.3261 18.7846C32.1297 18.8658 31.9192 18.9075 31.7067 18.9072Z"/>
+                                </svg>                                       
+                            </a> 
+                        </li>
+                    </ul>
+                </div>      
+            </div>
         </header>
 
         <main>
             <section class="our-purpose">
-                <h1 class="our-purpose__title">СПАСИ ЖИЗНЬ</h1>
-                <h2 class="our-purpose__title--small">Благотворительное общественное объединение защиты животных</h2>
-                <p class="our-purpose__purpose">Наша цель: помощь бездомным животных. Мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.</p>
-                <p class="our-purpose__content">У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
-                <a class="our-purpose__link" href="#help">Хочу помочь</a>
+                <div class="our-purpose__container">
+                    <h1 class="our-purpose__title">СПАСИ ЖИЗНЬ</h1>
+                    <h2 class="our-purpose__title--small">Благотворительное общественное объединение защиты животных</h2>
+                    <p class="our-purpose__purpose">Наша цель: помощь бездомным животных. Мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.</p>
+                    <p class="our-purpose__content">У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+                    <div class="our_purpose__help help">  
+                        <a class="help__link" href="#help">Хочу помочь</a>
+                    </div>
+                </div>    
             </section>
 
             <section class="intro">
-                <div class="intro__image-block intro-image-block">
-                    <img class="intro-image-block__img" src="#" alt="photo of pets" width="510" height="501">
-                </div>
-                <div class="intro__text-block intro-text-block">
-                    <h2 class="intro-text-block__titile">Тут большие добрые сердца помогают жить маленьким сердечкам</h2>
-                    <p class="intro-text-block__text">Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга!</p>
-                    <p class="intro-text-block__text">Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
+                <div class="intro__container">
+                    <div class="intro__image-block intro-image-block">
+                        <img class="intro-image-block__img" src="img/intro-img.png" alt="photo of pets">
+                    </div>
+                    <div class="intro__text-block intro-text-block">
+                        <h3 class="intro-text-block__titile">Тут большие добрые сердца помогают жить маленьким сердечкам</h3>
+                        <p class="intro-text-block__text">Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга!</p>
+                        <p class="intro-text-block__text">Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
+                    </div>
                 </div>
             </section>
 
             <section class="help" id="help">
               <div class="help__body">
-                <h2 class="help__title">Как помочь?</h2>
+                <h3 class="help__title">Как помочь?</h3>
                 <div class="help__row">                
                   <div class="help__column">
                     <div class="item-help">
@@ -102,24 +120,27 @@
             </section>
 
             <section class="take-home" id="takeHome">
-                <img class="take-home__icon" src="img/take-goods.svg" alt="Дать хвостику дом или взять на передержку">
-                <div class="take-home__block take-home-block">
-                    <h2 class="take-home-block__title">Дом и любовь для хвостика</h2>
-                    <p class="take-home-block__text">Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому-то нужен будет именно такой друг.</p>
+                <div class="take-home__icon section-start-icon">
+                    <img src="img/take-home.svg" alt="Дать хвостику дом или взять на передержку">
                 </div>
-                <div class="take-home__block take-home-block">
-                    <h2 class="take-home-block__title">Передержка</h2>
-                    <p class="take-home-block__text">Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.</p>
-                </div>
-                    
+                <div class="take-home-block__container">
+                    <div class="take-home__block take-home-block">
+                        <h3 class="take-home-block__title">Дом и любовь для хвостика</h3>
+                        <p class="take-home-block__text">Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому-то нужен будет именно такой друг.</p>
+                    </div>
+                    <div class="take-home__block take-home-block">
+                        <h3 class="take-home-block__title">Передержка</h3>
+                        <p class="take-home-block__text">Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.</p>
+                    </div>
+                </div>    
                 <div class="animals" id="animals">
-                    <h2 class="animals__title">Наши подопечные</h2>
+                    <h3 class="animals__title">Наши подопечные</h3>
                     <a class="animals__link animals__link--look-all" href="#">Посмотреть всех</a>
                     <ul class="animals__list">
                         <li class="animals__item item-animals">
                             <div class="item-animals__wrapper wrapper-item-animals"> <!--возможнос стоит убрать обертку-->
                                 <img class="wrapper-item-animals__img" href="#" alt="фото животного" width="368" height="372">
-                                <h3 class="wrapper-item-animals__name">Имя</h3>
+                                <h4 class="wrapper-item-animals__name">Имя</h4>
                                 <p class="wrapper-item-animals__descr">Описание</p>
                                 <p class="wrapper-item-animals__descr">Сколько в САХЕ, на передержке</p>
                             </div>
@@ -127,7 +148,7 @@
                         <li class="animals__item item-animals">
                             <div class="item-animals__wrapper wrapper-item-animals">
                                 <img class="wrapper-item-animals__img" href="#" alt="фото животного" width="368" height="372">
-                                <h3 class="wrapper-item-animals__name">Имя</h3>
+                                <h4 class="wrapper-item-animals__name">Имя</h4>
                                 <p class="wrapper-item-animals__descr">Описание</p>
                                 <p class="wrapper-item-animals__descr">Сколько в САХЕ, на передержке</p>
                             </div>
@@ -135,7 +156,7 @@
                         <li class="animals__item item-animals">
                             <div class="item-animals__wrapper wrapper-item-animals">
                                 <img class="wrapper-item-animals__img href="#" alt="фото животного" width="368" height="372">
-                                <h3 class="wrapper-item-animals__name">Имя</h3>
+                                <h4 class="wrapper-item-animals__name">Имя</h4>
                                 <p class="wrapper-item-animals__descr">Описание</p>
                                 <p class="wrapper-item-animals__descr">Сколько в САХЕ, на передержке</p>
                             </div>
@@ -147,16 +168,18 @@
                     </div>
                 </div>
 
-                    <div class="animals__footer footer-animals">
-                        <p class="footer-animals__text">Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях. Переходите на наши странички.</p>
-                        <a class="footer-animals__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>         
-                        <a class="footer-animals__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a>
-                    </div>
+                <div class="animals__footer footer-animals">
+                    <p class="footer-animals__text">Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях. Переходите на наши странички.</p>
+                    <a class="footer-animals__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>         
+                    <a class="footer-animals__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a>
+                </div>
             </section>
 
             <section class="money" id="money">
-                <img class="money__icon" src="img/money.svg" alt="Перечислить деньги в фонд помощи">
-                <h2 class="money__title">Финансовая поддержка</h2>
+                <div class="money__icon section-start-icon">
+                    <img src="img/money.svg" alt="Перечислить деньги в фонд помощи">
+                </div>
+                <h3 class="money__title">Финансовая поддержка</h3>
                 <p class="money__decr"> Такая помощь необходима для оплаты стерилизации, прививок, лечения больных животных, покупка корма и других жизненно необходимых вещей.</p>
                 
                 <div class="money__bank bank-money">
@@ -189,9 +212,11 @@
             </section>
 
             <section class="take-goods" id="takeGoods">
-                <img class="take-goods__icon" src="img/take-goods.svg" alt="Привезти корм, лекарства или другие вещи">
+                <div class="take-goods__icon section-start-icon">
+                    <img src="img/take-goods.svg" alt="Привезти корм, лекарства или другие вещи">
+                </div>
                 <article class="take-goods__feed feed-take-goods">
-                    <h2 class="feed-take-goods__title">Корма</h2>
+                    <h3 class="feed-take-goods__title">Корма</h3>
                     
                     <ul class="feed-take-goods__list">
                         <span>Можно помочь с покупкой и доставкой еды для хвостатых:</span>
@@ -203,11 +228,11 @@
                     
                 </article>
                 <article class="take-goods__medicine medicine-take-goods">
-                    <h2 class="medicine-take-goods__title">Лекарства</h2>
+                    <h3 class="medicine-take-goods__title">Лекарства</h3>
                     <p class="medicine-take-goods__content">Нам необходимы препараты: <span class="span-bold">цефтриаксон</span> (флакон по 0,5 г); <span class="span-bold">новокаин</span> (раствор для инъекций); <span class="span-bold">гискан</span>; <span class="span-bold">гамавит</span>; <span class="span-bold">катозал</span>; <span class="span-bold">антитокс фоспренил</span>; <span class="span-bold">энтеросгель</span> (паста); <span class="span-bold">препараты от глистов, блох, клещей, для заживления ран</span>.</p>
                 </article>
                 <article class="take-goods__other other-take-goods">
-                    <h2 class="other-take-goods__title">Другие нужные вещи</h2>
+                    <h3 class="other-take-goods__title">Другие нужные вещи</h3>
                     <ul class="other-take-goods__list">
                         <span>Для содержания животных всегда необходимы:</span>
                         <li>Ошейники, поводки, намордники;</li>
@@ -221,19 +246,23 @@
             </section>
 
             <section class="autohelp" id="autohelp">
-                <img class="autohelp__icon" src="img/autohelp.svg" alt="Доставить животным еду или отвезти в больницу">
+                <div class="autohelp__icon section-start-icon">
+                    <img src="img/autohelp.svg" alt="Доставить животным еду или отвезти в больницу">
+                </div>
                 <h3 class="autohelp__title">Автопомощь</h3>
                 <p class="autohelp__content">Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную клинику в сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль, немного свободного времени и доброе сердце - будем вам рады.</p>
                 <input class="autohelp__button button" type="button" id="autohelp-form" name="autohelp-from" value="Оставить заявку">
             </section>
 
             <section class="volunteer" id="volunteer">
-                <img class="volunteer__icon"src="img/Group 12.svg" alt="Выгуливать, кормить, мыть или лечить хвостиков">
+                <div class="volunteer__icon section-start-icon">
+                    <img src="img/volunteer.svg" alt="Выгуливать, кормить, мыть или лечить хвостиков">
+                </div>
                 <div class="volunteer__image-block volunteer-image-block">
                     <img class="volunteer-image-block__img" src="img/volunteer.png" width="510">
                 </div>
                 <div class="volunteer__text-block volunteer-text-block">
-                    <h2 class="volunteer-text-block__title">Волонтерство</h2>
+                    <h3 class="volunteer-text-block__title">Волонтерство</h3>
                     <p class="volunteer-text-block__content">Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!<br>
                     Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.</p>
                     <input class="volunteer-text-block__button" type="button" id="volunteer-form" name="volunteer-form" value="Оставить заявку"> 
@@ -241,7 +270,7 @@
             </section>
 
             <section class="news">
-                <h2 class="news__title">Новости</h2>
+                <h3 class="news__title">Новости</h3>
                 <div class="news__items-wrapper">
                   <article class="news__item news-item">
                       <div class="news-item__img-wrapper news-item-img-wrapper">
@@ -272,10 +301,10 @@
             </section>
 
             <section class="about" id="about">
-                <h2 class="about__title">О нас</h2>
+                <h3 class="about__title">О нас</h3>
                 <p class="about__text">Мы - благотворительное общественное объединение защиты животных «СПАСИ ЖИЗНЬ». Цель нашей деятельности: помощь бездомным животным, оказавшимся в Пункте отлова и временного содержания безнадзорных животных г.Гродно.</p>
             
-                <h2 class="about__contacts-title" id="contact">Контакты</h2>
+                <h3 class="about__contacts-title" id="contact">Контакты</h3>
                  <ul class="about__tel">
                     <span>Если Вы хотите приютить одного из этих четвероногих или оказать какую-либо помощь, звоните волонтёрам:</span>
                     <li>+375 (33) 6237879, Лена</li>
@@ -283,14 +312,14 @@
                     <li>+375 (29) 5837015, Рита</li>
                 </ul>
 
-                <div class="social-networks about__social-networks about-social-networks">
+                <div class="about__social-networks about-social-networks">
                   <span>Связаться с нами можно написав в соц. сетях.</span>
-                  <ul class="social-networks__list about-social-networks__list">
-                    <li class="social-networks__item about-social-networks__item">
-                      <a class="social-networks__link about-social-networks__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>
+                  <ul class="about-social-networks__list">
+                    <li class="about-social-networks__item">
+                      <a class="about-social-networks__link" href="https://vk.com/animalsgrodno"><img src="img/VK_Orange.svg" alt="Страница Вконтакте"></a>
                     </li>
-                    <li class="social-networks__item about-social-networks__item">
-                      <a class="social-networks__link about-social-networks__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a> 
+                    <li class="about-social-networks__item">
+                      <a class="about-social-networks__link" href="https://www.instagram.com/animalsgrodno/"><img src="img/Insta_Orange.svg" alt="Страница Инстаграм"></a> 
                     </li>
                   </ul>
                 </div>
@@ -306,18 +335,18 @@
         </main>
         
         <footer class="page-footer">
-            <div>
-                <a href="#takeHome">Дом или передержка</a>
-                <a href="#money">Финансовая поддержка</a>
-                <a href="#takeGoods">Корма, лекарства и другие вещи</a>
-                <a href="#autohelp">Автопомощь</a>
-                <a href="volunteer">Волонтерство</a>
+            <div class="footer__nav footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a href="#takeHome">Дом или передержка</a></li>
+                    <li class="footer-nav__item"><a href="#money">Финансовая поддержка</a></li>
+                    <li class="footer-nav__item"><a href="#takeGoods">Корма, лекарства и другие вещи</a></li>
+                    <li class="footer-nav__item"><a href="#autohelp">Автопомощь</a></li>
+                    <li class="footer-nav__item"><a href="volunteer">Волонтерство</a></li>
+                    <li class="footer-nav__item"><a href="#about">О нас</a></li>
+                    <li class="footer-nav__item"><a href="#contact">Контакты</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="#about">О нас</a>
-                <a href="#contact">Контакты</a>
-            </div>
-            <div>
+            <div class="copyright">
                 &copy; 2020 БООЗЖ "СПАСИ ЖИЗНЬ"
             </div>
         </footer>
