@@ -56,65 +56,56 @@
 
             <section class="intro">
                 <div class="intro__container">
-                    <div class="intro__image-block intro-image-block">
-                        <img class="intro-image-block__img" src="img/intro-img.png" alt="photo of pets">
-                    </div>
-                    <div class="intro__text-block intro-text-block">
-                        <h3 class="intro-text-block__titile">Тут большие добрые сердца помогают жить маленьким сердечкам</h3>
-                        <p class="intro-text-block__text">Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга!</p>
-                        <p class="intro-text-block__text">Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
-                    </div>
+                  <div class="intro__image-block image-block">
+                    <div class="image-block__main-img circle-img"></div>
+                    <div class="image-block__minor-img circle-img circle-img--minor"></div>
+                  </div>
+                  <div class="intro__text-block text-block">
+                    <h3 class="text-block__titile">Тут большие добрые сердца помогают жить маленьким сердечкам</h3>
+                    <p class="text-block__text">Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга!</p>                                                                       <p class="text-block__text">Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</p>
                 </div>
+              </div>
             </section>
 
             <section class="help" id="help">
-              <div class="help__body">
+              <div class="help-container">
                 <h3 class="help__title">Как помочь?</h3>
-                <div class="help__row">                
-                  <div class="help__column">
+                <div class="help__content">
+                                   
                     <div class="item-help">
                       <div class="item-help_icon">
                         <a href="#takeHome"><img src="img/take-home.svg"></a>
                       </div>
                       <div class="item-help__text">Дать хвостику дом или взять на передержку</div>
-                    </div>  
-                  </div>
+                    </div>
 
-                  <div class="help__column">
                     <div class="item-help">
                       <div class="item-help_icon">
                         <a href="#money"><img src="img/money.svg"></a>
                       </div>
                       <div class="item-help__text">Перечислить деньги в фонд помощи</div>
                     </div>  
-                  </div>
 
-                  <div class="help__column">
                     <div class="item-help">
                       <div class="item-help_icon">
                         <a href="#takeGoods"><img src="img/take-goods.svg"></a>
                       </div>
                       <div class="item-help__text">Привезти корм, лекарства или другие вещи</div>
                     </div>  
-                  </div>
 
-                  <div class="help__column">
                     <div class="item-help">
                       <div class="item-help_icon">
                         <a href="#autohelp"><img src="img/autohelp.svg"></a>
                       </div>
                       <div class="item-help__text">Доставить животным еду или отвезти в больницу</div>
                     </div>  
-                  </div>
 
-                  <div class="help__column">
                     <div class="item-help">
                       <div class="item-help_icon">
                         <a href="#volunteer"><img src="img/volunteer.svg"></a>
                       </div>
                       <div class="item-help__text">Выгуливать, кормить, мыть или лечить хвостиков</div>
-                    </div>  
-                  </div>
+                    </div>
                 </div>    
               </div> 
             </section>
@@ -124,7 +115,7 @@
                     <img src="img/take-home.svg" alt="Дать хвостику дом или взять на передержку">
                 </div>
                 <div class="take-home-block__container">
-                    <div class="take-home__block take-home-block">
+                    <div class="take-home__block take-home__block--left take-home-block take-home__block--left">
                         <h3 class="take-home-block__title">Дом и любовь для хвостика</h3>
                         <p class="take-home-block__text">Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших хвостиках, возможно кому-то нужен будет именно такой друг.</p>
                     </div>
@@ -132,7 +123,9 @@
                         <h3 class="take-home-block__title">Передержка</h3>
                         <p class="take-home-block__text">Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на время. Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.</p>
                     </div>
-                </div>    
+                </div>
+            </section>
+            <section class="animals">                                            
                 <div class="animals" id="animals">
                     <h3 class="animals__title">Наши подопечные</h3>
                     <a class="animals__link animals__link--look-all" href="#">Посмотреть всех</a>
@@ -258,14 +251,14 @@
                 <div class="volunteer__icon section-start-icon">
                     <img src="img/volunteer.svg" alt="Выгуливать, кормить, мыть или лечить хвостиков">
                 </div>
-                <div class="volunteer__image-block volunteer-image-block">
-                    <img class="volunteer-image-block__img" src="img/volunteer.png" width="510">
+                <div class="volunteer__image-block image-block">
+                    <img class="image-block__img" src="img/volunteer.png">
                 </div>
-                <div class="volunteer__text-block volunteer-text-block">
-                    <h3 class="volunteer-text-block__title">Волонтерство</h3>
-                    <p class="volunteer-text-block__content">Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!<br>
+                <div class="volunteer__text-block text-block">
+                    <h3 class="text-block__title">Волонтерство</h3>
+                    <p class="text-block__content">Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!<br>
                     Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.</p>
-                    <input class="volunteer-text-block__button" type="button" id="volunteer-form" name="volunteer-form" value="Оставить заявку"> 
+                    <input class="text-block__button" type="button" id="volunteer-form" name="volunteer-form" value="Оставить заявку"> 
                 </div>
             </section>
 
