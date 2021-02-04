@@ -52,7 +52,8 @@ h3 {
 }
 
 .page-header {
-  max-width: 1256px;
+  /*max-width: 1256px;*/
+  max-width: 1146px;
   max-height: 746px;
   margin: 0 auto;
 }
@@ -80,7 +81,7 @@ h3 {
 }
 
 .nav__list {
-  margin-left: 110px;
+  /*margin-left: 110px;*/
   padding: 0px;
 }
 
@@ -136,13 +137,13 @@ h3 {
 }
 
 .our-purpose {
-  max-width: 1256px;
+  /*max-width: 1256px;*/
+  max-width: 1146px;
   margin: 0 auto;
 }
 
 .our-purpose__container {
   position: relative;
-  padding-left: 110px;
   padding-bottom: 272px;
 }
 
@@ -152,8 +153,8 @@ h3 {
   background: url(./img/text_main.png) left no-repeat;
   width: 772px;
   height: 484px;
-  left: 0;  
-  top: 176px;
+  left: -110px;  
+  top: 174px;
   z-index:-1;
 }
 
@@ -188,7 +189,7 @@ h3 {
   font-weight: 600;
   line-height: 140%;
   color: #C78100;
-  margin: 40px 0px 44px 0px;  
+  margin: 40px 0px 49px 0px;  
 }
 
 .our-purpose__content::after {
@@ -202,7 +203,6 @@ h3 {
   z-index: 9999;
 }
 
-
 .our_purpose__help {  
  margin-top: 47px;
 }
@@ -211,57 +211,102 @@ h3 {
   background-color: #FBC832;
   font-size: 20px;
   color: #000000;  
-  padding: 8px 33px;
+  padding: 10px 33px;
   border-radius: 58px;
   text-decoration: none;
 }
 
 .intro {  
   background-color: #ffffff;
-  min-height: 650px;
-  margin: 0 auto;
+  padding: 55px 0 75px 0;
 }
 
 .intro__container {
-  position:relative;    
   display: flex;
-  max-width: 1256px;
-  min-height: 510px;
+  align-items: center;
+  max-width: 1146px;
   margin: 0 auto;
 }
 
-.intro__image-block {
-  margin: 54px 0px 75px 0px;
-  width: 605px;
-  height: 541px;
-  border: 1px solid green;
+.image-block {
+  width: 44%;
+  position: relative;
+}
+
+.image-block::before {
+  content: '';
+  width: 50vw;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  background-color: #FFC41E;
+}
+
+.image-block__main-img {
+  position: relative;
+}
+
+.image-block__main-img::after {
+  background: url(./img/intro-img_dog.png) no-repeat center;
+  background-size: contain; 
+}
+
+.image-block__minor-img {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -3.8%;
+  right: -5.5%;
+  width: 49.14%;
+}
+
+.image-block__minor-img::after {
+  background: url(./img/intro-img_cat.png) no-repeat center;
+  background-size: contain;
+}
+
+.circle-img {
+  border-radius: 50%; 
+  overflow: hidden;
+  border: 28px solid #FFC41E;  
+  margin-left: -28px;
+}
+
+.circle-img--minor {
+  border: 8px solid #EEBF3A;
+}
+
+.circle-img::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+  height: 0;  
 }
 
 .intro__text-block {
   max-width: 466px;
-  padding: 0px;
-  margin-left: 94px;
-  margin-top: 128px;
-  margin-bottom: 137px;
-  border: 1px solid green;  
+  padding: 0;
+  margin: 74px 0px 62px 94px;
 }
 
-.intro-text-block__titile {
+.text-block__titile {
   margin: 0px 0px 28px 0px;
   text-align: center;
   color: #C78100;
 }
 
-.intro-text-block__text {
+.text-block__text {
  line-height: 140%;
  margin: 20px 0px 0px 0px;
  padding: 0px;
 }
 
-.help__body{
+.help-container{
   max-width: 1146px;
   margin: 0px auto;
 }
+
 .help__title {
   margin: 80px auto 47px auto;
   font-weight: 300;
@@ -270,13 +315,17 @@ h3 {
   text-align: center;
 }
 
-.help__row {
+.help__content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   min-height: 240px;
 }
 
-.help__column {
-  flex: 0 0 20%;
+.item-help {
+  padding: 8px;
+  max-width: 150px;  
 }
 
 .item-help_icon{
@@ -286,8 +335,8 @@ h3 {
   height: 150px;
   border: 2px solid #FFC41E;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .item-help__text {
@@ -296,12 +345,11 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
-  width: 150px;
 }
 
 .section-start-icon img {
  padding: 0px 58px 0px 58px; 
- background-color: #E5E5E5;
+ background-color: #F6F6F6;
 }
 
 .section-start-icon {
@@ -312,7 +360,8 @@ h3 {
   text-align: center;
 }
 
-.section-start-icon::before, .section-start-icon::after {
+.section-start-icon::before, 
+.section-start-icon::after {
   content: '';
   flex: 1;
   border-bottom: 1px solid #EEBF3A;
@@ -325,9 +374,14 @@ h3 {
   margin-left: .25em;
 }
 
+.take-home {
+  margin: 0 auto;
+}
+
 .take-home-block__container{
-  display: flex;
-  max-width: 875px;
+  max-width: 1146px;
+  margin: 0 auto;  
+  border: 1px solid green;
 }
 
 .take-home-block__title{
@@ -337,7 +391,13 @@ h3 {
 }
 
 .take-home__block {
-  margin: 0px auto;
+  display: inline-block;
+  max-width: 389px;
+}
+
+.take-home__block--left {
+  margin-left: 174px;
+  margin-right: 97px;
   max-width: 389px;
 }
 
