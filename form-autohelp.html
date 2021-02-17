@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./normalize.css">
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./form-style.css">
+      <title>Автопомощь</title>
+  </head>
+  <body>
+    <main>
+
+      <form action="#" method="post" name="form-autohelp" class="form-autohelp">
+        <div class="form-container">
+          <h3 class="form-autohelp-title form__title">Автопомощь</h3>
+          <a href="#" class="close"></a>
+          <P class="application">Заявка</P>
+          <p class="form__text text--grey">Отправьте нам заявку о том, что готовы помочь.
+           Когда нам будет необходима помощь в транспортировке, мы позвоним вам.
+          </p>
+
+          <div class="form__name form-input">
+            <input type="text" class="input" name="form-autohelp-name" id="form-autohelp-name" placeholder=" " pattern="[A-Za-zА-Яа-яЁё/s]{2,56}">                             
+            <label for="form-autohelp-name" class="input-label">Фамилия и имя</label>
+          </div>
+          
+          <div class="form__phone form-input">
+            <input type="tel" class="input" name="form-autohelp-phone" id="form-autohelp-phone" pattern="+375(\s{0,}|\({0,1})(29|25|44|33)(\s{0,}|\){0,1})(\d{3})(\s{0,}|\-{0,1})(\d{2})(\s{0,}|\-{0,1})(\d{2})$" placeholder=" " required>
+            <label for="form-autohelp-phone" class="input-label">Номер телефона</label>
+          </div>
+          <span class="tel-comment">Обязательное поле для заполнения</span>
+
+          <div class="form-autohelp__type">
+            <p class="form-autohelp__type-text">Выберите вид автопомощи</p>
+            <label class="custom-input">Доставка еды, медикаментов и других небольших вещей 
+            <input type="checkbox" class="custom-input__input" name="form-autohelp-type" value="Доставка еды, медикаментов и других небольших вещей">
+            <span class="custom-input__pseudo-input"></span>
+            </label>
+
+            <label class="custom-input">Доставка сена или соломы, строительных материлов для будок и других крупногабаритных вещей 
+              <input type="checkbox" class="custom-input__input" name="form-autohelp-type" value="Доставка сена или соломы, строительных материлов для будок и других крупногабаритных вещей">
+              <span class="custom-input__pseudo-input"></span>
+            </label>
+
+            <label class="custom-input">Транспортировка небольших собак и котов
+              <input type="checkbox" class="custom-input__input" name="form-autohelp-type" value="Транспортировка небольших собак и котов">
+              <span class="custom-input__pseudo-input"></span>
+            </label>
+
+            <label class="custom-input">Транспортировка больших собак
+              <input type="checkbox" class="custom-input__input" name="form-autohelp-type" value="Транспортировка больших собак">
+              <span class="custom-input__pseudo-input"></span>
+            </label>
+          </div>
+
+          <div class="form-autohelp__comment textarea-container form-input">
+            <textarea id="form-autohelp-comment" class="textarea input" name="form-autohelp-comment" rows="3" maxlength="500" placeholder=" "></textarea>
+            <label for="form-autohelp-comment" class="input-label">Замечания</label>
+          </div>
+
+
+          <div class="form-autohelp-buttons form__buttons form-btn">
+            <button type="submit" class="form-btn__submit btn-primary">Отправить заявку</button>
+            <button type="reset" class="form-btn__cancel btn-secondary">Отмена</button>
+          </div>
+        </div>    
+      </form>
+      
+    </main>
+  </body>
+</html>
