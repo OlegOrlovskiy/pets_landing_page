@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./normalize.css">
+      <link rel="stylesheet" href="./style.css">
+      <title>Наши подопечные</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div class="animals-header">
+          <a class="back-icon" href="index.html"></a>
+          <h3>Наши подопечные</h3>
+          <select class="animal-filter" id="filter" name="type-of-animals" onchange=function(filter_animals)>
+            <option value="all">Коты и собаки</option>
+            <option value="cats">Только коты</option>
+            <option value="dogs">Только собаки</option>
+          </select>
+        </div>
+
+        <div class="animals-content-container" id="animals">                   
+          <ul class="animals__cards" id="animals-list">
+            <li class="animals__card card dog">
+              <div class="card__wrapper">
+                <div class="card__content">                      
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\monic.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Моник</h4>
+                  <p class="card__descr-age text--grey">Мальчик, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые руки и под паспорт.</p>
+                  </div>
+                </div>                                   
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card cat">
+              <div class="card__wrapper">
+                <div class="card__content">  
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\lunatik.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Лунатик</h4>
+                  <p class="card__descr-age text--grey">Мальчик, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Она не знает, что такое – царапаться и кусаться, она не знает, что такое нападать на других животных.</p>
+                  </div>
+                </div>
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                               
+              </div>
+            </li>
+            <li class="animals__item card dog">
+              <div class="card__wrapper">
+                <div class="card__content">
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\gerda.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Герда</h4>
+                  <p class="card__descr-age text--grey">Девочка, 5 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые руки и под паспорт.</p>
+                  </div>
+                </div>                                     
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card cat">
+              <div class="card__wrapper">
+                <div class="card__content">                      
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\saki.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Саки</h4>
+                  <p class="card__descr-age text--grey">Девочка, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.</p>
+                  </div>
+                </div>                                  
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card dog">
+              <div class="card__wrapper">
+                <div class="card__content">                        
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\monika.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Моника</h4>
+                  <p class="card__descr-age text--grey">Девочка, 4 месяца</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Девочке 4 месяца жила в ужасных условиях, бывшая хозяйка могла исчезнуть на двое суток закрыв её одну в комнате без еды, ей нельзя там больше оставаться. Мила очень ласковая, забавная, в еде не привередлива.</p>
+                  </div>
+                </div>
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card dog">
+              <div class="card__wrapper">
+                <div class="card__content">                          
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\adreantino.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Андреантино</h4>
+                  <p class="card__descr-age text--grey">Мальчик, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.</p>
+                  </div>
+                </div>
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                
+              </div>
+            </li>
+            <li class="animals__card card dog">
+              <div class="card__wrapper">
+                <div class="card__content">                      
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\monic.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Моник</h4>
+                  <p class="card__descr-age text--grey">Мальчик, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые руки и под паспорт.</p>
+                  </div>
+                </div>                                   
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card cat">
+              <div class="card__wrapper">
+                <div class="card__content">  
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\lunatik.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Лунатик</h4>
+                  <p class="card__descr-age text--grey">Мальчик, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Она не знает, что такое – царапаться и кусаться, она не знает, что такое нападать на других животных.</p>
+                  </div>
+                </div>
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                               
+              </div>
+            </li>
+            <li class="animals__item card dog">
+              <div class="card__wrapper">
+                <div class="card__content">
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\gerda.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Герда</h4>
+                  <p class="card__descr-age text--grey">Девочка, 5 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые руки и под паспорт.</p>
+                  </div>
+                </div>                                     
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card cat">
+              <div class="card__wrapper">
+                <div class="card__content">                      
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\saki.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Саки</h4>
+                  <p class="card__descr-age text--grey">Девочка, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.</p>
+                  </div>
+                </div>                                  
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card dog">
+              <div class="card__wrapper">
+                <div class="card__content">                        
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\monika.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Моника</h4>
+                  <p class="card__descr-age text--grey">Девочка, 4 месяца</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Девочке 4 месяца жила в ужасных условиях, бывшая хозяйка могла исчезнуть на двое суток закрыв её одну в комнате без еды, ей нельзя там больше оставаться. Мила очень ласковая, забавная, в еде не привередлива.</p>
+                  </div>
+                </div>
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                 
+              </div>
+            </li>
+            <li class="animals__item card dog">
+              <div class="card__wrapper">
+                <div class="card__content">                          
+                  <div class="card__img-container">                              
+                    <img class="card__img" src="img\animals\adreantino.jpg" alt="фото животного">                                         </div>
+                  <h4 class="card__name">Андреантино</h4>
+                  <p class="card__descr-age text--grey">Мальчик, 7 месяцев</p>
+                  <div class="card__descr line-clamp">                                  
+                    <p>Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.</p>
+                  </div>
+                </div>
+                <div class="card__buttons btn-animals">
+                  <button class="btn-animals__take-home btn-primary" id="take-home-form" name="take-home-form">Забрать домой</button>
+                  <button class="btn-animals__overexposure btn-secondary" id="overexposure-from" name="overexposure-from">Забрать на передержку</button>
+                </div>                                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer-container">                         
+      <div class="footer__nav footer-nav">
+        <ul class="footer-nav__list-content">
+          <li class="footer-nav__item"><a class="link--underline link--underline-light" href="#takeHome">Дом или передержка</a></li>
+          <li class="footer-nav__item"><a class="link--underline link--underline-light" href="#money">Финансовая поддержка</a></li>
+          <li class="footer-nav__item"><a class="link--underline link--underline-light" href="#takeGoods">Корма, лекарства и другие вещи</a></li>
+          <li class="footer-nav__item"><a class="link--underline link--underline-light" href="#autohelp">Автопомощь</a></li>
+          <li class="footer-nav__item"><a class="link--underline link--underline-light" href="volunteer">Волонтерство</a></li>
+        </ul>
+        <ul class="footer-nav__list-about">
+          <li class="footer-nav__item footer-nav__item--normal-weight"><a class="link--underline link--underline-normal" href="#about">О нас</a></li>
+          <li class="footer-nav__item footer-nav__item--normal-weight"><a class="link--underline link--underline-normal" href="#contact">Контакты</a></li>            
+        </ul>
+      </div>
+      <div class="copyright text--grey">
+        &copy; 2020 БООЗЖ "СПАСИ ЖИЗНЬ"
+      </div>
+    </div>
+  </footer>   
+                                            
+  </body>
+</html>
