@@ -1,0 +1,98 @@
+.form-btn {
+  position: relative;
+}
+
+.btn-secondary {
+  margin-left: 300px;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -1px;
+  left: -1px;
+  z-index: -2;  
+  background: blue;
+  box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+  border-radius: 2.9em;
+  z-index: 1;
+}
+
+/*
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  right: -6px;
+  left: -6px;
+  z-index: -2;  
+  background: #F6F6F6;
+  box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+  border-radius: 2.9em;
+  border: 1px solid rgba(233, 233, 233, 0.78);
+}
+
+.btn-secondary:focus::before {
+  top: -8px;
+  bottom: -8px;
+  right: -8px;
+  left: -8px;
+  border: 3px solid #6B6B6B;
+}
+
+
+.btn-secondary::after {
+  content: '';
+  position: absolute;
+  top: -1px;  
+  right: -1px;
+  bottom: -1px;
+  left: -1px;  
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 58px;
+  z-index: -1;  
+}
+
+.btn-secondary:hover { 
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+}
+
+.btn-secondary:hover::after { 
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 53.12%, #EFECEC 100%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 3px 3px 13px rgba(128, 128, 128, 0.25);
+}
+
+
+.btn-secondary:active {
+  background: linear-gradient(180deg, #F1F1F1 1.56%, #FCFAFA 100%);
+  box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25), inset 0px 4px 13px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary:active::before{
+  border: 0;
+}  
+
+.btn-secondary:disabled {
+  color: #B3B3B3;
+}
+
+
+*/
+
+
+.btn-secondary .btn-border {
+  position: relative;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 500;  
+  padding: 0.3em 1.45em;
+  border-radius: 2.9em;
+  text-align: center;
+  text-decoration: none;
+  color: #242424;
+  border: 0;     
+  background: green;
+  box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+  cursor: pointer;
+  outline: none;
+}

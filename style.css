@@ -84,36 +84,6 @@ a {
   z-index: -2;
 }
 
-.nav__menu {
-  display: none;
-  appearance: none;
-  border: 0;
-  width: 24px;
-  height: 16px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.nav__menu > span,
-.nav__menu > span::before,
-.nav__menu > span::after {
-  display: block;
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background-color: #242424;
-}
-
-.nav__menu > span::before {
-  content: '';
-  top: -6px;
-}
-.nav__menu > span::after {
-  content: '';
-  top: 6px;
-}
-
-
 .nav__list,
 .nav-social-networks__list {
   display: flex;
@@ -126,8 +96,26 @@ a {
 }
 
 .nav__link {
+  position: relative;
   font-size: 16px;
 }
+
+.nav__link:hover {
+  font-weight: 700;
+}
+
+.nav__link:hover::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.1em;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+
+
 
 
 .nav__list .nav__item:nth-child(2) {
@@ -292,7 +280,7 @@ a {
 }
 
 .image-block__minor-img::after {
-  background: url(./img/intro-img_cat.png) no-repeat center;
+  background: url(./img/design/intro-img_cat.png) no-repeat center;
   background-size: contain;
 }
 
@@ -557,7 +545,7 @@ height: 356px;
   background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
   box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
   border-radius: 2.9em;
-  border: 1px solid rgba(233, 233, 233, 0.78);
+  border: 1px solid rgba(233, 233, 233, 0.78); 
 }
 
 .btn-primary:focus::before { 
@@ -579,7 +567,7 @@ height: 356px;
   background: linear-gradient(180deg, #FFF0C5 0%, #EEC03F 100%);
   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
   border-radius: 58px;
-  z-index: -1;  
+  z-index: -1;
 }
 
 /* hover for upper layer */
@@ -732,6 +720,7 @@ height: 356px;
 .link--underline {
   position: relative;  
   text-decoration: none;
+  transition: background-color, color 0.3s ease; 
 }
 
 .link--underline::before {
@@ -741,14 +730,31 @@ height: 356px;
   top: 1.1em;
   width: 100%;
   height: 1px;
+  transition: background-color, color 0.3s ease;   
 }
 
 .link--underline-orange {  
   color: #AD7F00;
 }
 
+.link--underline-orange:hover {  
+  color: #523C00;
+}
+
+.link--underline-orange:active {  
+  color: #F6B400;
+}
+
 .link--underline-orange::before {
-  background: #AD7F00;
+  background-color: #AD7F00;
+}
+
+.link--underline-orange:hover::before {
+  background-color: #523C00;
+}
+
+.link--underline-orange:active::before {
+  background-color:  #F6B400;
 }
 
 .animals__link::after {
@@ -758,7 +764,9 @@ height: 356px;
   right: -40px;
   height: 40px;
   width: 40px;
+  transition: background-color, color 0.3s ease;   
 }
+
 
 .animals__footer{
   display: flex;
@@ -1240,18 +1248,46 @@ margin-top: 40px;
 
 .link--underline-light {  
   color: #474747;
+  transition: color 0.3s ease; 
+}
+
+.link--underline-light:hover {  
+  color: #AD7F00;
+}
+
+.link--underline-light:active {  
+  color: #474747;
 }
 
 .link--underline-light::before {
+  background: #474747;
+  transition: background-color 0.3s ease; 
+}
+
+.link--underline-light:hover::before {
+  background: #AD7F00;
+}
+
+.link--underline-light:active::before {
   background: #474747;
 }
 
 .link--underline-normal {
   color: #242424;
+  transition: color 0.3s ease; 
 }
 
 .link--underline-normal::before {
   background: #242424;
+  transition: background-color 0.3s ease; 
+}
+
+.link--underline-normal:hover {
+  color: #AD7F00;
+}
+
+.link--underline-normal:hover:before {
+  background: #AD7F00;
 }
 
 .copyright{
@@ -1733,8 +1769,41 @@ margin-top: 40px;
     font-size: calc(1rem + 2px);
   }
 
+  .nav__menu-container {
+    display: none;
+    width: 100vw;
+    height: 64px;
+    background: #FFC41E;
+    z-index: 4;
+  }
+
   .nav__menu {
     display: inline-block;
+    appearance: none;
+    border: 0;
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  
+  .nav__menu > span,
+  .nav__menu > span::before,
+  .nav__menu > span::after {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #242424;
+  }
+  
+  .nav__menu > span::before {
+    content: '';
+    top: -6px;
+  }
+  .nav__menu > span::after {
+    content: '';
+    top: 6px;
   }
   
   .nav-container {
