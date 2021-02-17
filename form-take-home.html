@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./normalize.css">
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./form-style.css">
+      <title>Забрать домой</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post" name="form-take-home" class="form-take-home">
+        <div class="form-container">
+          <h3 class="form-take-home-title form__title">Забрать домой</h3>
+          <a href="#" class="close"></a>
+
+          <div class=" form__pet-info pet-info">
+            <img src="img/monic.png" class="pet-info__img">
+            <div class="pet-info__descr pet-descr">
+              <h4 class="pet-descr__name">Моник</h4>
+              <p class="pet-descr__age">Мальчик, 7 месяцев</p>
+            </div>
+          </div>
+          <p class="form__text text--grey">Оставьте информацию о себе. Мы позвоним вам и договоримся,
+          когда вы сможете забрать себе питомца.</p>
+
+          <div class="form__name form-input">
+            <input type="text" class="input" name="form-take-home-name" id="form-take-home-name" placeholder=" " pattern="[A-Za-zА-Яа-яЁё/s]{2,56}">                             
+            <label for="form-take-home-name" class="input-label">Фамилия и имя</label>
+          </div>
+          
+          <div class="form__phone form-input">
+            <input type="tel" class="input" name="form-take-home-phone" id="form-take-home-phone" pattern="+375(\s{0,}|\({0,1})(29|25|44|33)(\s{0,}|\){0,1})(\d{3})(\s{0,}|\-{0,1})(\d{2})(\s{0,}|\-{0,1})(\d{2})$" placeholder=" " required>
+            <label for="form-take-home-phone" class="input-label">Номер телефона</label>
+          </div>
+          <span class="tel-comment">Обязательное поле для заполнения</span>
+
+          <div class="form-take-home__comment textarea-container form-input">
+            <textarea id="form-take-home-comment" class="textarea input" name="form-take-home-comment" rows="3" maxlength="500" placeholder=" "></textarea>
+            <label for="form-take-home-comment" class="input-label">Замечания</label>
+          </div>
+
+          <div class="form-take-home__contacts form__contacts form-contacts">
+            <p class="form-contacts__text">Если у вас есть вопросы, можете позвонить нам:</p>
+            <ul class="form-contacts__tel">
+              <li>+375 (33) 6237879, Лена</li>
+              <li>+375 (29) 7877791, Ольга</li>
+              <li>+375 (29) 5837015, Рита</li>
+            </ul>
+          </div>
+
+          <div class="form-take-home-buttons form__buttons form-btn">
+            <button type="submit" class="form-btn__submit btn-primary">Отправить</button>
+            <button type="reset" class="form-btn__cancel btn-secondary">Отмена</button>
+          </div>
+        </div>    
+      </form>
+      
+    </main>
+  </body>
+</html>

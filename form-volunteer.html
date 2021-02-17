@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="./normalize.css">
+      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./form-style.css">
+      <title>Волонтерство</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="post" name="form-volunteer" class="form-volunteer">
+        <div class="form-container">
+          <h3 class="form-volunteer-title form__title">Волонтерство</h3>
+          <a href="#" class="close"></a>
+          <P class="application">Заявка</P>
+          <p class="form__text text--grey">Отправьте нам заявку о том, что готовы помочь.
+           Когда нам будет необходима помощь в транспортировке, мы позвоним вам.
+          </p>
+
+          <div class="form__name form-input">
+            <input type="text" class="input" name="form-volunteer-name" id="form-volunteer-name" placeholder=" " pattern="[A-Za-zА-Яа-яЁё/s]{2,56}">                             
+            <label for="form-volunteer-name" class="input-label">Фамилия и имя</label>
+          </div>
+          
+          <div class="form__phone form-input">
+            <input type="tel" class="input" name="form-volunteer-phone" id="form-volunteer-phone" pattern="+375(\s{0,}|\({0,1})(29|25|44|33)(\s{0,}|\){0,1})(\d{3})(\s{0,}|\-{0,1})(\d{2})(\s{0,}|\-{0,1})(\d{2})$" placeholder=" " required>
+            <label for="form-volunteer-phone" class="input-label">Номер телефона</label>
+          </div>
+          <span class="tel-comment">Обязательное поле для заполнения</span>
+
+          <div class="form-volunteer__type">
+            <label class="custom-input custom-input--radiobutton">Хочу помогать на постоянной основе (расписание можно подобрать так, как будет удобно для всех)
+              <input type="radio" class="custom-input__input" name="form-volunteer-type" value="always">
+              <span class="custom-input__pseudo-input"></span>
+            </label>
+
+            <label class="custom-input custom-input--radiobutton">Готов помогать иногда. Хочу выбрать удобное для меня время 
+              <input type="radio" class="custom-input__input" name="form-volunteer-type" value="sometimes">
+              <span class="custom-input__pseudo-input"></span>
+            </label>
+          </div>
+
+          <div class="form-volunteer__comment textarea-container form-input">
+            <textarea id="form-volunteer-comment" class="textarea input" name="form-volunteer-comment" rows="3" maxlength="500" placeholder=" "></textarea>
+            <label for="form-volunteer-comment" class="input-label">Замечания</label>
+          </div>
+
+
+          <div class="form-volunteer-buttons form__buttons form-btn">
+            <button type="submit" class="form-btn__submit btn-primary">Отправить заявку</button>
+            <button type="reset" class="form-btn__cancel btn-secondary">Отмена</button>
+          </div>
+        </div>    
+      </form>
+
+    </main>
+  </body>
+</html>
