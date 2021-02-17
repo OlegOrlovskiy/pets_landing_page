@@ -1,4 +1,4 @@
-#Landing page for anumals shelter
+# Landing page for anumals shelter
 
 ## Oleg Orlovskiy - Senla student
 
